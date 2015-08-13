@@ -1,0 +1,953 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="US9331">
+  <ReviewIssue id="I69KADQ7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 10:25:19:999 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 17:54:15:601 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="223">src/main/resources/config.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Grades should get from database, we should not have hard-coded values in the properties file. Remove this property from here.</Summary>
+    <Description>UsersGradeDropDownValues=-- All Grades --,Grade K,Grade 1,Grade 2,Grade 3,Grade 4,Grade 5,Grade 6,Grade 7,Grade 8,Grade 9,Grade 10,Grade 11,Grade 12,Not Specified</Description>
+    <Annotation>Grades need to be fetched from database.</Annotation>
+    <Revision>Grades are being fetched from database now.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69KD0QE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 10:27:23:126 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 12:52:25:787 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="223">src/main/resources/config.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Create enum instead of hard-coded values in the properties file. Similar to DeploymentTypes under enums package. Remove this property from here.</Summary>
+    <Description>UserTypeDropDownValues=-- All Groups --,-- All User Types --,-- All Administrators --,-- All Teachers --,-- All Active Students --,-- Unassigned students -- </Description>
+    <Annotation>Enum can be used for storing User type dropdown values.</Annotation>
+    <Revision>Enum is used for User Type dropdown. Class name : UsersTypeDropDown.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69KFABH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 10:29:08:861 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 12:52:33:194 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="229">src/main/resources/config.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Same enum should be used which is going to create in the previous comment. Remove this property from here.</Summary>
+    <Description>UserTypeDropDownValuesForDistrict=-- All Groups --,-- All User Types --,-- All Administrators --,-- All Teachers --,-- All Active Students --</Description>
+    <Annotation>enum can be used.</Annotation>
+    <Revision>Enum is used for User Type dropdown. Class name : UsersTypeDropDown.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69KU6O2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 10:40:43:970 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 12:52:45:745 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="22">src/main/java/com/pearson/uitest/constants/UsersConstants.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Fix checkstyle issue</Summary>
+    <Description></Description>
+    <Annotation>Needs to be fixed.</Annotation>
+    <Revision>Fixed the checkstyle issue.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69KV6GT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 10:41:30:365 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 12:53:05:102 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="223">src/main/resources/config.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Remove this property from here. UserConstants already defined --All Grades--</Summary>
+    <Description>UsersGradeDefault=-- All Grades --</Description>
+    <Annotation>Property needs to be removed.</Annotation>
+    <Revision>Removed property from config file.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69KXLWE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 10:43:23:678 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-19 :: 14:14:59:202 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="26">src/main/java/com/pearson/uitest/constants/UsersConstants.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>These should come from enums which will  be created as part of one of the comment.</Summary>
+    <Description>    public static final String USER_TYPE_DEFAULT_SELECTED = "-- All Groups --";</Description>
+    <Annotation>Get this value from enum.</Annotation>
+    <Revision>enum is used for getting the value. still seeing public static final String USER_TYPE_SELECTED_AFTER_GRADE = "-- All Active Students --"; Constant is removed and vaue is being fetched from enum.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69L0P1V">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 10:45:47:731 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 12:55:53:736 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="26">src/main/java/com/pearson/uitest/constants/UsersConstants.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>This constant is not used, remove from here.</Summary>
+    <Description>public static final String USER_ORG_NAME_SCHOOL = "User School Auto Org";</Description>
+    <Annotation>Remove the constant.</Annotation>
+    <Revision>Removed the constant.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69L1LZ6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 10:46:30:402 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 12:55:59:791 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="26">src/main/java/com/pearson/uitest/constants/UsersConstants.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>This constant is not used, remove from here.</Summary>
+    <Description>public static final String USER_ORG_ID_SCHOOL = "USAO01";</Description>
+    <Annotation>Remove the constant.</Annotation>
+    <Revision>Removed the constant.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69L4D6I">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 10:48:38:970 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 12:56:36:682 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="170">src/main/java/com/pearson/uitest/pageobjects/UsersBasePage.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Call getText() method from test itself instead of creating separate method. </Summary>
+    <Description>public String getUsersGoBtnText() {
+        return getUsersGoBtn().getText();
+    }</Description>
+    <Annotation>Method can be removed from page objects.</Annotation>
+    <Revision>Removed the method from page object.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69L7JAS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 10:51:06:868 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 12:56:39:657 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="265">src/main/java/com/pearson/uitest/pageobjects/UsersBasePage.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Remove this method instead test can call getText() method directly.</Summary>
+    <Description> public String getUsersAddUserBtnText() {
+        return getUsersAddUserBtn().getText();
+    }</Description>
+    <Annotation>Method can be removed from page objects.</Annotation>
+    <Revision>Method is removed from page object.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69L8M4W">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 10:51:57:200 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 12:56:43:633 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="247">src/main/java/com/pearson/uitest/pageobjects/UsersBasePage.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Remove this method instead test can call getText() method directly.</Summary>
+    <Description>public String getUsersAddGroupBtnText() {
+        return getUsersAddGroupBtn().getText();
+    }</Description>
+    <Annotation>Method can be removed from page objects.</Annotation>
+    <Revision>Method is removed from page object.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69L949T">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 10:52:20:705 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 12:56:49:288 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="233">src/main/java/com/pearson/uitest/pageobjects/UsersBasePage.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Remove this method instead test can call getText() method directly.</Summary>
+    <Description>public String getUsersTransferStudentBtnText() {
+        return getUsersTransferStudentBtn().getText();
+    }</Description>
+    <Annotation>Method can be removed from page objects.</Annotation>
+    <Revision>Removed the method to get text. </Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69LA6TX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 10:53:10:677 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 12:56:53:392 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="219">src/main/java/com/pearson/uitest/pageobjects/UsersBasePage.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Remove this method instead test can call getText() method directly.</Summary>
+    <Description>public String getUsersSearchBtnText() {
+        return getUsersSearchBtn().getText();
+    }</Description>
+    <Annotation>Method can be removed from page objects.</Annotation>
+    <Revision>Method to get text from button is removed.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69LGUI6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 10:58:21:294 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 12:57:15:189 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="54">src/main/java/com/pearson/uitest/constants/AdminUIConstants.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Move these constants to LocatorConstants file (to be created)</Summary>
+    <Description>public static final String BUTTON_DISABLED_CLASS = "btnDisable";
+    public static final String HIGHLIGHT_BUTTON_CLASS = "ng-binding active";</Description>
+    <Annotation>Class needs to be created for locator constants.</Annotation>
+    <Revision>Created separate class [LocatorConstants] for maintaining constants</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69LL8MU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 11:01:46:230 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-19 :: 14:13:47:538 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="68">src/main/java/com/pearson/uitest/testobjects/userspage/UsersBaseTest.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Add assertion failure message appropriately to the verification.</Summary>
+    <Description> Assert.assertNotNull( ( (UsersBasePage) page ).getUsersOrgDropDown() );
+
+For example,
+ Assert.assertNotNull( ( (UsersBasePage) page ).getUsersOrgDropDown() , "User page organization drop down is not present.");
+
+Still the verification fsilure message not added for few test methods.
+Assert.assertEquals( ( (UsersBasePage) page ).getDefaultSelectedItemInOrgDropDown(), UsersConstants.USER_ORG_NAME );
+</Description>
+    <Annotation>Assertion failure message can be added.</Annotation>
+    <Revision>Assertion failure message is added. Added Assertion failure message wherever, we had missed.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69LNFYU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 11:03:29:046 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 13:00:36:250 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="80">src/main/java/com/pearson/uitest/testobjects/userspage/UsersBaseTest.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Add assertion failure message appropriately to the verification.</Summary>
+    <Description>Assert.assertNotNull( ( (UsersBasePage) page ).getUsersSearchBtn() );</Description>
+    <Annotation>Assert failure message can be added.</Annotation>
+    <Revision>Assertion failure message is added.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69LNUGN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 11:03:47:831 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 13:00:49:376 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="84">src/main/java/com/pearson/uitest/testobjects/userspage/UsersBaseTest.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Add assertion failure message appropriately to the verification. Applicable for all tests.</Summary>
+    <Description> Assert.assertNotNull( ( (UsersBasePage) page ).getUsersGradeDropDown() );</Description>
+    <Annotation>Assertion failure message can be added.</Annotation>
+    <Revision>Assertion failure message is added.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69LONXD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 11:04:26:017 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 13:01:32:578 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="90">src/main/java/com/pearson/uitest/testobjects/userspage/UsersBaseTest.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Get from UserConstants instead of appProperties.getProperty( "UsersGradeDefault" )</Summary>
+    <Description>Assert.assertEquals( ( (UsersBasePage) page ).getDefaultSelectedItemInGradeDropDown(), appProperties.getProperty( "UsersGradeDefault" ) );</Description>
+    <Annotation>Default value can be stored in Constants class.</Annotation>
+    <Revision>Value is got from UsersConstants</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69LQ8Q5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 11:05:39:629 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 13:02:51:896 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="97">src/main/java/com/pearson/uitest/testobjects/userspage/UsersBaseTest.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Grades should come from database, not from properties file.</Summary>
+    <Description>List&lt;String&gt; expGradeValues = Lists.newArrayList( appProperties.getProperty( "UsersGradeDropDownValues" ).split( "," ) );</Description>
+    <Annotation>Grades need to be fetched from database.</Annotation>
+    <Revision>Grades are fetched from database now.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69LRLLM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 11:06:42:970 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-19 :: 14:13:42:705 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="105">src/main/java/com/pearson/uitest/testobjects/userspage/UsersBaseTest.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Add assertion failure message appropriately to the verification. Applicable for all tests.</Summary>
+    <Description> Assert.assertNotNull( ( (UsersBasePage) page ).getUsersTypeDropDown() );
+
+Still not followed for few method:
+Assert.assertEquals( expGradeValues, actGradeValues );</Description>
+    <Annotation>Failure message needs to be added.</Annotation>
+    <Revision>Assertion failure message is added. Assertion failure message is added for remaining tests.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69LSJV1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 11:07:27:373 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 13:04:01:430 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="111">src/main/java/com/pearson/uitest/testobjects/userspage/UsersBaseTest.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Should be retrieved from enum which are going to create by you.</Summary>
+    <Description> Assert.assertEquals( ( (UsersBasePage) page ).getDefaultSelectedItemInUsersTypeDropDown(), UsersConstants.USER_TYPE_DEFAULT_SELECTED );</Description>
+    <Annotation>enum can be used for fetching value.</Annotation>
+    <Revision>Value is retrieved from enum now. Class name : UsersTypeDropDown.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69LU4DM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 11:08:40:618 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 13:15:59:429 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="117">src/main/java/com/pearson/uitest/testobjects/userspage/UsersBaseTest.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>It should come from enum.</Summary>
+    <Description>  ( (UsersBasePage) page ).selectItemFromUsersTypeDropDown( UsersConstants.USER_TYPE_TO_SELECT );
+</Description>
+    <Annotation>Value can be fetched from enum.</Annotation>
+    <Revision>Value is fetched from enum. Class name : UsersTypeDropDown.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69M4N9E">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 11:16:51:650 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-20 :: 14:41:47:982 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Sai Prasad</AssignedTo>
+    <File line="117">src/main/java/com/pearson/uitest/testobjects/userspage/UsersBaseTest.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Missing tests</Summary>
+    <Description>We can add more combinations of tests between Grades dropdown and Groups dropdown.
+
+For Example:
+Selection of any grade from the grade dropdown should make default selection as '-- All Active Students --' in the groups dropdown. Right now it is verified by seleting Grade 12 and it can be extended for all and even for Not Specified grade as well.
+
+The reverse also has to be tested. Selecting any option from the group dropdown should make default selection in grade dropdown  as '-- All Grades --'
+
+This way we can bring some more combination of tests.
+
+---------
+
+The intension of the manual test case is to test with any combination:
+
+If you look at the below case it does not say that you have to choose Grade 12 always and '-- All Groups --' would be there another dropdown always. In Real time scenario there could be any value selected by the user. When the manual tester does this he would do more combnations by selection different values in both dropdowns. Whenever I select  any grade the user type dropdown should change to --All Active Students --. In reverse, whenever I select some other usertype (except unassigned students) the grade dropdown should change to -- All Grades --. 
+
+With any selection made in the filter box other than "-- All Active Students --", verify by selecting any grade or "Not Specified" from the Grades list box will automatically update the filter box to "-- All Active Students --"
+
+However we have planned to add the comments to to indicate the various combination in the test case row itself, seperate test case row would be created if it missing in the document.
+
+Pearson: Please refer row: 425</Description>
+    <Annotation>This is not part of test case mapping document. Hence, we have covered the scenarion which is available in test case mapping document.</Annotation>
+    <Revision>Updated the test method to include all the combinations as mentioned by you in Test Case mapping document. Please refer checkDefaultSelectedInGradesAndUserTypeDropDownOnSelectingDiffrentGradeAndTypes() test method in UsersBaseTest class.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69MFVBP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 11:25:35:317 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 13:21:29:385 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="118">src/main/java/com/pearson/uitest/testobjects/userspage/UsersBaseTest.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>UserType values could be enumurated and referred rather than from property file</Summary>
+    <Description>List&lt;String&gt; expUserTypeValues = Lists.newArrayList( appProperties.getProperty( "UserTypeDropDownValues" ).split( "," ) );</Description>
+    <Annotation>enumerated values can be used.</Annotation>
+    <Revision>Enum is user for User Type dropdown values.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69MHJP6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 11:26:53:562 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-19 :: 14:29:00:489 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Sai Prasad</AssignedTo>
+    <File line="156">src/main/java/com/pearson/uitest/testobjects/userspage/UsersBaseTest.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Proper test method name</Summary>
+    <Description>Please make sure that the test method name indicates what it does.
+checkGoBtn
+This method could be named as checkGoBtnText()
+
+Please change for:
+checkUsersAddGroupBtn()
+checkUsersAddUserBtn()</Description>
+    <Annotation>Method name needs to be changed.</Annotation>
+    <Revision>Made changes as suggested. Changed the method names which have been missed.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69MJLFK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 11:28:29:120 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 13:25:26:073 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="156">src/main/java/com/pearson/uitest/testobjects/userspage/UsersBaseTest.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Make use of the returned element</Summary>
+    <Description>Assert.assertEquals( ( (UsersBasePage) page ).getUsersGoBtnText(), appProperties.getProperty( "UsersGoBtnText" ) );
+
+You do have 2 methods for getting the element and separate method for getting the text. Getting the text can be done in test level by the element returned (for labels you can have getText in page object itself as we done do any othere action there). The assertion failure message also can be added and log of successful verification after assertion. This will bring better clarity.
+
+Assert.assertEquals( ( (UsersBasePage) page ).getUsersGoBtn().getText(), appProperties.getProperty( "UsersGoBtnText" ), "The Go button did not have the expected text on it - " +  appProperties.getProperty( "UsersGoBtnText" ));
+log.info("Verified the Go button text");
+
+Please fix wherever applicable.</Description>
+    <Annotation>Getting text can be done in test level.</Annotation>
+    <Revision>Made changes as suggested.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69MVAMS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 11:37:34:996 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 13:27:17:277 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="180">src/main/java/com/pearson/uitest/testobjects/userspage/UsersBaseTest.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Verify the welcome message</Summary>
+    <Description>checkDefaultOrgSelectionInDisplayDropDownAfterSelectingOrgInHome
+
+Once you selected some organization and navigating to Home Tab should show you the welcome message:
+Users and Groups at "XXXXXXXXXXXXXXXXXX" using "SuccessMaker"
+</Description>
+    <Annotation>Test case can be added.</Annotation>
+    <Revision>Test method is added for the same in UsersBaseTest class. Method name: checkWelcomeMessageAfterSelectingOrgInHomeAndNavigatingToUsers()</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69N130E">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 11:42:05:054 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 13:27:32:671 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="208">src/main/java/com/pearson/uitest/testobjects/userspage/UsersBaseTest.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Proper test name</Summary>
+    <Description>checkUsersSearchBtn
+
+Change it as checkUsersSearchBtnText</Description>
+    <Annotation>Test name needs to be changed.</Annotation>
+    <Revision>Modified test name as suggested.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69N1WFD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 11:42:43:177 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 17:54:06:055 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="232">src/main/java/com/pearson/uitest/testobjects/userspage/UsersBaseTest.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Use proper test name</Summary>
+    <Description>checkUsersTransferStudentsBtn can be named as checkUsersTransferStudentsBtnText</Description>
+    <Annotation>Method name needs to be changed.</Annotation>
+    <Revision>Modified the test name as suggested.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69N6ACU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 11:46:07:854 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-19 :: 14:05:11:688 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Sai Prasad</AssignedTo>
+    <File line="193">src/main/java/com/pearson/uitest/testobjects/userspage/UsersBaseTest.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Verification Missing</Summary>
+    <Description>Please add verification to verify by default all the dropdown values in the user page organization dropdown. 
+
+Please refer the Org dropdown list from other page tests like OrganizationPageTest. You can make of it as it does not require any new query.</Description>
+    <Annotation>This will be fixed as part of data validation. Defect is added for the same in Rally - Defect ID : DE8537</Annotation>
+    <Revision>Test case is added. Please refer the test method checkDisplayDropDownValues() in SystemDistrictAdminUsersBaseTest class.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69NAKBK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 11:49:27:392 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 13:32:00:552 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="194">src/main/java/com/pearson/uitest/testobjects/userspage/UsersBaseTest.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Verification Missing</Summary>
+    <Description>Please add verification to check that user page organization dropdown contains only the that was selected in the home tab. Please don not move this kind of small data validation to backlog as it is already exists.</Description>
+    <Annotation>Test case can be added for this.</Annotation>
+    <Revision>Added test method to verify the same . Method name 'checkUsersPageOrgDropDownHasOnlySelectedOrgInHome()' in UsersBaseTest.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69NTWJQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 12:04:29:702 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 13:32:18:377 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="226">src/main/java/com/pearson/uitest/testobjects/userspage/UsersBaseTest.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Add assertion failure message appropriately to the verification. Applicable for all tests.</Summary>
+    <Description>Assert.assertNotNull( ( (UsersBasePage) page ).getUsersTransferStudentBtn() );</Description>
+    <Annotation>Assertion failure message needs to be added.</Annotation>
+    <Revision>Added assertion failure message.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69O4K6C">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 12:12:46:884 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 13:33:26:118 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Ram</AssignedTo>
+    <File line="230">src/main/java/com/pearson/uitest/testobjects/userspage/UsersBaseTest.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Missing test for veridying grades are displayed in correct order</Summary>
+    <Description></Description>
+    <Annotation>Test method is present already. Please refer checkUsersGradesDropDownValues() method in UsersBaseTest. However, we are fetching grades from database now.</Annotation>
+    <Revision>Test method is present already. Please refer checkUsersGradesDropDownValues() method in UsersBaseTest. However, we are fetching grades from database now.</Revision>
+    <Resolution>item.resolution.label.invalidWontfix</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69O5K6Z">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 12:13:33:563 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 13:35:38:127 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="224">src/main/java/com/pearson/uitest/testobjects/userspage/UsersBaseTest.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Missing tests for group type drop down values are displayed in the correct order</Summary>
+    <Description>--All Groups--
+--All User Types --
+--All Administrators--
+--All Teachers--
+--All Active students--
+--Unassigned students--</Description>
+    <Annotation>This scenario is covered under 'checkUsersTypeDropDownAfterSelectingSchoolInOrgDropDown()' method in UserBaseTest class and 'checkUserTypeDropDownAfterSelectingDistrictInOrgDropDown()' in SystemAdminUsersLandingPageTest, DistrictAdminUsersLandingPageTest classes. Hence, separate method is not written for this.</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.invalidWontfix</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69O8V2S">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 12:16:07:636 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-19 :: 14:04:53:397 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Sai Prasad</AssignedTo>
+    <File line="238">src/main/java/com/pearson/uitest/testobjects/userspage/UsersBaseTest.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Missing scenario</Summary>
+    <Description>1&gt; select any school in the home tab
+2&gt; Navigate to organization tab
+3&gt; Edit the school
+4&gt; Change the name of the school
+5&gt; Click users tab
+6&gt; Opens confirm dialog, click 'Yes'
+7&gt; Verify welcome message and display organization drop down
+
+Expected:
+Welcome message should have new school name and drop down should be selected school
+
+Actual:
+Welcome message has old scool name (before change) and default value of drop down is district.
+
+=========
+
+The defect is deleted as the US development is in progress. Please have this test case automated it will get passed once the development is complete. This issue has been informed to Prashant to take care in the course of current development.</Description>
+    <Annotation>This is a corner case. We will fix this later.</Annotation>
+    <Revision>As discussed in the call, this will be taken up later.</Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69OGPGK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 12:22:13:604 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-19 :: 14:04:59:785 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="118">src/main/java/com/pearson/uitest/testobjects/userspage/SchoolAdminUsersLandingPageTest.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Missing test to verify display organization drop down value</Summary>
+    <Description>Refer the old test cases automated from homepagetest / orgpagetest for this validation. Do not push to backlog as it can used from the existing stuff.</Description>
+    <Annotation>This will be fixed as part of data validation. Defect is added for the same in Rally - Defect ID : DE8537</Annotation>
+    <Revision>This test case has been added . Please refer  checkDisplayDropDownValues() test method in SystemDistrictAdminUsersBaseTest and SchoolAdminUsersLandingPageTest classes.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69OI5G9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 12:23:20:985 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-19 :: 14:28:53:857 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Sai Prasad</AssignedTo>
+    <File line="118">src/main/java/com/pearson/uitest/testobjects/userspage/SchoolAdminUsersLandingPageTest.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Missing test to verify default selected organization in the display drop down box</Summary>
+    <Description>Move the test under appropriate login test.
+
+The common tests between System Admin and District Admin can be put in to the class called SystemDistrictAdminUserBaseTest which extends user base test.
+
+SystemDistrictAdminUserBaseTest  can be extended by SysemAdminUserLandingPageTest and DistrictAdminUserLandingPageTest.</Description>
+    <Annotation>Test case can be added.</Annotation>
+    <Revision>Test method 'checkDefaultOrgSelectedInDisplayDropDown()' is added in UsersBaseTest. SystemAdminUsersLandingPageTest class is created to maintain common test methods.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69OIW43">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 12:23:55:539 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-19 :: 14:28:28:709 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="119">src/main/java/com/pearson/uitest/testobjects/userspage/SchoolAdminUsersLandingPageTest.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Missing test to verify welcome message on school admin login</Summary>
+    <Description>Move the schooladmin test to appropriate class rather than clubbing in same classs with if..else
+This is applicable wherever it is implemented.</Description>
+    <Annotation>Test case needs to be added.</Annotation>
+    <Revision>Test method is moved to appropriate class.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69OLLAR">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 12:26:01:491 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 13:54:18:952 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="118">src/main/java/com/pearson/uitest/testobjects/userspage/SchoolAdminUsersLandingPageTest.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Missing tests for district admin login</Summary>
+    <Description></Description>
+    <Annotation>Test cases need to be added.</Annotation>
+    <Revision>Added test cases for District admin login. Refer the class DistrictAdminUsersLandingPageTest</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69OOEF7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 12:28:12:547 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 14:02:09:639 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="77">src/main/java/com/pearson/uitest/testobjects/userspage/SystemAdminUsersLandingPageTest.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Get the district name from database. OrgHelper.getAllDistricts()</Summary>
+    <Description> ( (BasePage) page ).selectItemFromDropDown( ( (UsersBasePage) page ).getOrganizationDropDown(), AdminUIConstants.DISTRICT_ADMIN_FIRSTNAME );</Description>
+    <Annotation>District name can be fetched from database.</Annotation>
+    <Revision>District name is being fetched from database.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69OS3Q7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 12:31:05:311 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 14:08:12:135 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="72">src/main/java/com/pearson/uitest/testobjects/userspage/SystemAdminUsersLandingPageTest.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Missing test to check organization drop down values displayed in ascending order</Summary>
+    <Description></Description>
+    <Annotation>Test method can be added for checking ascending order.</Annotation>
+    <Revision>Test method 'checkOrganizationsDropDownValuesInAscendingOrder()' is added in UsersBaseTest.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I69OVOWJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-17 :: 12:33:52:723 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-19 :: 14:28:05:209 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="61">src/main/java/com/pearson/uitest/testobjects/userspage/SystemAdminUsersLandingPageTest.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Missing tests for selecting organization name to reset grade and group drop down values</Summary>
+    <Description>We did not find any test case for this issue
+
+RS: Please check  Test Method: checkUserTypeAndGradeAfterSelectingOrgInDropDown() inSystemDistrictAdminUsersBaseTest class.</Description>
+    <Annotation>Test case can be added.</Annotation>
+    <Revision>Test method is added to verify the same. Test Method: checkUserTypeAndGradeAfterSelectingOrgInDropDown() inSystemDistrictAdminUsersBaseTest class.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I6B6PG2X">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 13:40:40:617 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-19 :: 14:16:33:217 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Sai Prasad</AssignedTo>
+    <File line="73">src/main/java/com/pearson/uitest/testobjects/userspage/UsersBaseTest.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Move this test to appropriate tests</Summary>
+    <Description>Do not mess the tests from different logins in base test. Move it to the correesponding page test.
+</Description>
+    <Annotation>Methods can be separated out.</Annotation>
+    <Revision>Test methods are moved to respective test classes.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I6B6Z34T">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 13:48:10:397 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-19 :: 18:51:49:285 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="52">src/main/java/com/pearson/uitest/testobjects/userspage/UsersBaseTest.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>CheckStyle issue</Summary>
+    <Description>checkUsersWelcomeMessage()
+
+Remove the checkstyle issue in the above method and alos wherever if any.</Description>
+    <Annotation>Needs to be fixed.</Annotation>
+    <Revision>Fixed the checkstyle issue.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I6B71OXA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 13:50:11:950 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-19 :: 12:17:29:531 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="85">src/main/java/com/pearson/uitest/testobjects/userspage/SystemAdminUsersLandingPageTest.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Extend the UserBaseTest in one more level</Summary>
+    <Description>These test methods are common between SystemAdmin login and DistrictAdmin login. Do not repeat. Extend the UserBaseTest by the class SystemDistrictAdminUserBaseTest by putting all these common methods between Sys and Dist admin. 
+
+SystemDistrictAdminUserBaseTest extend this class by SystemAdminUserLandingPageTest and DistrcitAdminUserLandingPageTest. Hence the common test methods will not be repeated.</Description>
+    <Annotation>Can be refactored.</Annotation>
+    <Revision>SystemDistrictAdminUsersBaseTest class is created which has all the common methods between Sys and Dist admin.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I6B7C5GA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 13:58:19:930 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-19 :: 12:12:52:612 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="36">src/main/java/com/pearson/uitest/testobjects/userspage/UsersBaseTest.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>districtName</Summary>
+    <Description>This variable is not required at UserBaseTest level and district is used only  (this is common for all logins) for Sys and Dist admin logins and not in school admin.. Move it to SystemDistrictAdminUserBaseTest and do not declare as static as well.</Description>
+    <Annotation>Moved districtName to SystemDistrictUsersBaseTest class.</Annotation>
+    <Revision>Moved districtName to SystemDistrictUsersBaseTest class.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I6B7F2AG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 14:00:35:800 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-19 :: 14:16:26:681 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="36">src/main/java/com/pearson/uitest/testobjects/userspage/UsersBaseTest.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Remove schoolAdmin varialbe</Summary>
+    <Description>Remove this variable as you need to move it to the appropriate test.</Description>
+    <Annotation>Remove schoolAdmin variable.</Annotation>
+    <Revision>schoolAdmin variable is removed.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I6BBELPS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 15:52:12:784 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-19 :: 14:16:19:929 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Sai Prasad</AssignedTo>
+    <File line="6">src/main/java/com/pearson/uitest/constants/LocatorConstants.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>change the filename in the comment section</Summary>
+    <Description>LocatorConstants.java
+
+ * Source file name : UsersConstants.java
+
+change the comment appropriately.
+</Description>
+    <Annotation>Needs to be fixed.</Annotation>
+    <Revision>Changed the source file name in the comments.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I6BCN4VN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 16:26:50:483 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-19 :: 11:58:19:996 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Sai Prasad</AssignedTo>
+    <File line="48">src/main/java/com/pearson/uitest/testobjects/userspage/DistrictAdminUsersLandingPageTest.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>DISTRICT_ADMIN_USERNAME - Creation</Summary>
+    <Description>Do not need to create DistrictAdmin here. It is done as part of data setup as it is required across various tests. Please handle the data specific to this test. The same is applicable for SystemAdmin Test as well.</Description>
+    <Annotation>Already created test data is used for District admin.</Annotation>
+    <Revision>Test data is specific for this test class only. So using it as part of this test class and creating and cleaning up the data at class level.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I6BD3QFD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-18 :: 16:39:44:905 MST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-19 :: 11:57:30:421 MST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="51">src/main/java/com/pearson/uitest/testobjects/userspage/SchoolAdminUsersLandingPageTest.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Creation of School Admin</Summary>
+    <Description>Do not create school admin here. It is created as part of data setup.</Description>
+    <Annotation>Test data is specific for this test class only. So using it as part of this test class and creating and cleaning up the data at class level.</Annotation>
+    <Revision>Test data is specific for this test class only. So using it as part of this test class and creating and cleaning up the data at class level. </Revision>
+    <Resolution>item.resolution.label.invalidWontfix</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+</Review>

@@ -1,0 +1,158 @@
+/************************************************************************************************************
+ * Project              : Robot / SM Admin Applet Removal Build Gradle for UIAutomation
+ * Module               : applet removal UI tests.
+ * Source file name     : build.gradle
+ * Description          : Executes UIAutomation - 'clean', 'compileJava', 'test', 'intTest', 'build'
+ * Written By           : Harisha Prabhu, Sai Prasad
+ * Copyright            : Copyright � 2014, Pearson PLC. Modified under contract by Robosoft Technologies Pvt. Ltd.
+ *
+ ************************************************************************************************************/
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'checkstyle'
+
+sourceCompatibility = 1.6
+version = '8.0.0'
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'SuccessMaker8 AppletRemoval UIAutmation - Selenium WebDriver, Page Objects',
+                   'Implementation-Version': version
+    }
+}
+
+repositories {
+    mavenCentral()	
+}
+
+defaultTasks 'makePretty', 'compileJava', 'check', 'test', 'doUITest'
+
+dependencies {
+
+    compile "org.seleniumhq.selenium:selenium-java:2.44.0"
+    compile "org.testng:testng:6.8.7"
+    compile("org.uncommons:reportng:1.1.2") {
+        exclude group: "org.testng", module: "testng"
+    }
+    compile "com.google.inject:guice:3.0"
+    compile "postgresql:postgresql:9.0-801.jdbc4"	
+	compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    compile group: 'commons-collections', name: 'commons-collections', version: '3.2'
+    testCompile group: 'junit', name: 'junit', version: '4.+'
+}
+
+task makePretty(type: Delete) {
+  delete 'test-output', 'build/reports', 'build/test-results', 'build/classes', 'build', 'target'
+}
+
+
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ["src/main/java"]
+        }
+    }
+}
+
+
+println "Source Classes"+ sourceSets.main.output.classesDir
+println "Source for Testng"+ sourceSets['main'].output.classesDir
+sourceSets {
+    println "source sets :: "+ main.output.classesDir
+}
+sourceSets {
+    main {
+        println "source out sets :: "+output.classesDir
+    }
+}
+
+// Iterate over the source sets
+sourceSets.all {
+    println "source sets all :: "+name
+}
+
+test {
+	  testClassesDir = file('build/classes/main')	//sourceSets.main.output.classesDir
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task configureProperties() {
+	def hostKey = "envUrl"
+	def dbHostKey = "dbHost"
+	
+	if(project.hasProperty(hostKey)) { 
+		ant.propertyfile(
+			file: "src/main/resources/config.properties") {
+			entry( key: hostKey, value: project.property(hostKey))
+		}
+	}
+	
+	if(project.hasProperty(dbHostKey)) { 
+		ant.propertyfile(
+			file: "src/main/resources/config.properties") {
+			entry( key: dbHostKey, value: project.property(dbHostKey))
+		}
+	}
+}
+
+task doUITest(type: Test, dependsOn: configureProperties) {
+    testClassesDir = file('build/classes/main')	
+    classpath = sourceSets.main.runtimeClasspath
+    
+    if(project.hasProperty("BROWSER") && "$BROWSER" != "ALL") {
+        useTestNG {
+            suites "./testng-by-browser.xml"
+        }
+        systemProperties["BROWSER"] = "$BROWSER"
+    }
+    else {
+        useTestNG {
+            suites "./testng.xml"
+        }
+    }
+      
+    println ">>executed"
+}
+
+task doRESTfulTest(type: Exec) {
+   
+  //on mac
+  //commandLine '/Applications/SoapUI-5.0.0.app/Contents/java/app/bin/testrunner.sh', '-frest-reports', './AdminAppRESTfulProject-soapui-project.xml' , '-a', '-M', '-j', '-PURL=http://10.40.222.44'
+
+  //on Linux jenkins slave
+  commandLine '/opt/SoapUI-5.0.0/bin/testrunner.sh','-frest-reports', '-a', '-M', '-j',  './AdminAppRESTfulProject-soapui-project.xml', '-PURL=http://10.40.222.44'
+
+ // HowTo: Gradle invocation
+ //gradle -d doRESTfulTest
+
+ 
+    println ">> ------------------------------------------------------------------- <<"  
+    println ">> RESTful tests executed" + execResult.toString()
+    println ">> ------------------------------------------------------------------- <<"
+}
+
+
+checkstyle {
+  // TODO The excludes are not working, ignore failures for now
+  configFile = new File(rootDir, 'checkstyle/sm-checkstyle.xml')
+
+  ignoreFailures = true
+  showViolations = true 
+  sourceSets = [sourceSets.main]
+  reportsDir = file("$project.buildDir/reports/cs")
+}
+
+
+
+
+
+uploadArchives {
+    repositories {
+       flatDir {
+           dirs 'src'
+       }
+    }
+}
+

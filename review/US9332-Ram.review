@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="US9332">
+  <ReviewIssue id="I6I29R8H">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-23 :: 21:40:53:345 GMT+05:30</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-25 :: 04:20:51:794 GMT+05:30</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="17">src/main/java/com/pearson/uitest/testobjects/userspage/GroupsBaseTest.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Move all group related tests to grouppage package (do not keep under userpage package)</Summary>
+    <Description></Description>
+    <Annotation>Test methods can be grouped under grouppage.</Annotation>
+    <Revision>Test classes are moved to grouppage package.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I6I2HJX5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-23 :: 21:46:57:113 GMT+05:30</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-25 :: 20:08:33:959 GMT+05:30</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Ram</AssignedTo>
+    <File line="38">src/main/java/com/pearson/uitest/pageobjects/GroupsLandingPage.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Work with developers to change id name as groupCancel instead of addGroupCancel. The same is used for edit group also.</Summary>
+    <Description>private By addGrpCancel = By.cssSelector( "button#addGroupCancel" );</Description>
+    <Annotation>Communicated with dev team. We have changed the locator in page object. Please add this as review comment for SM code review.</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.unsureValidity</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I6I2RR1S">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-23 :: 21:54:52:912 GMT+05:30</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-25 :: 16:09:42:500 GMT+05:30</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Harisha</AssignedTo>
+    <File line="35">src/main/java/com/pearson/uitest/pageobjects/GroupsLandingPage.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Work with developers to put meaningful id name instead of th1, th2 and th3. </Summary>
+    <Description> private By grpOwnerHeader = By.id( "groupTableHeaderth2" );
+    private By grpDescriptionHeader = By.id( "groupTableHeaderth3" );
+
+For example
+ groupTableHeaderth1 -&gt; groupTableHeaderName
+ groupTableHeaderth2 -&gt; groupTableHeaderOwner
+ groupTableHeaderth3 -&gt; groupTableHeaderDescription
+</Description>
+    <Annotation>Communicated with dev team. Changes are done accordingly.</Annotation>
+    <Revision>Communicated with dev team. Changes done accordingly.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I6I35DLA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-23 :: 22:05:28:654 GMT+05:30</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-25 :: 16:09:52:733 GMT+05:30</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Ram</AssignedTo>
+    <File line="99">src/main/java/com/pearson/uitest/pageobjects/GroupsLandingPage.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Please revisit this method once the locator IDs are fixed in the Group Landing Page</Summary>
+    <Description>public List&lt;String&gt; getItemsFromTableColumn( int colIndex ) {
+        List&lt;String&gt; colValues = getTableData( By.xpath( "//div[contains(@id, 'groupTableHeaderth" + colIndex + "\')]" ) );
+        colValues.remove( "" );
+        return colValues;
+    }
+
+Please declare locators for table header name, owner and description with out index and have 3 methods in the page object to get the repective table column data.
+
+Please go by id using col name. Please modify the script once dev team fixed it.</Description>
+    <Annotation>Communicated with dev team. We have modified to use column headers instead of id.</Annotation>
+    <Revision>Removed this method as it unused now.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I6I3HDAE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-23 :: 22:14:48:134 GMT+05:30</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-25 :: 04:10:12:125 GMT+05:30</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Ram</AssignedTo>
+    <File line="82">src/main/java/com/pearson/uitest/testobjects/userspage/GroupsBaseTest.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Typo - checkAllGroupChangesToAllUserTypesOnSearcheWithAllGroupsSelected on Searche</Summary>
+    <Description> public void checkAllGroupChangesToAllUserTypesOnSearcheWithAllGroupsSelected() {</Description>
+    <Annotation>Method name needs to be changed.</Annotation>
+    <Revision>Method name is corrected.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I6I3UQY3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-23 :: 22:25:12:363 GMT+05:30</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-24 :: 14:11:14:770 GMT+05:30</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Ram</AssignedTo>
+    <File line="89">src/main/java/com/pearson/uitest/testobjects/userspage/GroupsBaseTest.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Missing test cases for presence of AddUsersToGroup and Remove buttons</Summary>
+    <Description></Description>
+    <Annotation>We had not included this test case as it was not present in test case mapping document. Will fix later.</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I6I3VZO0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-23 :: 22:26:10:320 GMT+05:30</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-25 :: 02:29:43:333 GMT+05:30</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Ram</AssignedTo>
+    <File line="88">src/main/java/com/pearson/uitest/testobjects/userspage/GroupsBaseTest.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Missing test cases for Add Users To Group and Remove buttons enable or disable based on table data</Summary>
+    <Description>If no data present in the table, then disable Add Users To Group and Remove buttons
+If data present in the table, then enable Add Users To Group and Remove buttons</Description>
+    <Annotation>We had not included this test case as it was not present in test case mapping document. Will fix later.
+    public static final int GROUP_NAME_LIMIT = 35;
+
+    public static final String GROUP_NAME = "Automation Group";
+    public static final String GROUP_NAME_SECOND = "Automation Group Second";
+    public static final int GROUP_TYPE_ID = 1;
+    public static final String GROUP_DESCRIPTION = "Automation group descritpion";
+    public static final String GROUP_DESCRIPTION_SECOND = "Automation group description second";</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I6I3Z122">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-23 :: 22:28:32:090 GMT+05:30</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-24 :: 14:10:36:172 GMT+05:30</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Ram</AssignedTo>
+    <File line="88">src/main/java/com/pearson/uitest/testobjects/userspage/GroupsBaseTest.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Missing tests to verify table data for both distict and school selections.</Summary>
+    <Description>How do you make sure data which is displayed on Group table is correct.</Description>
+    <Annotation>This test case is not present in Test case mapping document. This requires database validation. Will fix later.</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I6I41A48">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-23 :: 22:30:17:144 GMT+05:30</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-25 :: 01:59:52:856 GMT+05:30</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Ram</AssignedTo>
+    <File line="89">src/main/java/com/pearson/uitest/testobjects/userspage/GroupsBaseTest.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Missing tests - Add groups as part of the test and verify whether data is coming as expected. Once data is verified then remove groups as part of the test.</Summary>
+    <Description></Description>
+    <Annotation>Will be covered as part of data validation</Annotation>
+    <Revision>Will be covered as part of data validation</Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I6I43NFR">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-23 :: 22:32:07:719 GMT+05:30</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-25 :: 15:30:32:010 GMT+05:30</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Ram</AssignedTo>
+    <File line="89">src/main/java/com/pearson/uitest/testobjects/userspage/GroupsBaseTest.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Missing test cases for table data sorting verfication.</Summary>
+    <Description>Fix with dataprovider and sorting logic should be simplfied.</Description>
+    <Annotation>Test case can be added.</Annotation>
+    <Revision>Data provider is used for checking sorting.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I6I47562">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-23 :: 22:34:50:666 GMT+05:30</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-24 :: 12:42:51:051 GMT+05:30</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Ram</AssignedTo>
+    <File line="80">src/main/java/com/pearson/uitest/testobjects/userspage/GroupsBaseTest.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Missing test cases for checkbox functionality.</Summary>
+    <Description>For example, clicking on checkbox at table header should select all groups in the table.</Description>
+    <Annotation>We had not included this test case as it was not present in test case mapping document. Will fix later.</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I6I48YR4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-23 :: 22:36:15:664 GMT+05:30</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-24 :: 12:42:41:067 GMT+05:30</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Ram</AssignedTo>
+    <File line="89">src/main/java/com/pearson/uitest/testobjects/userspage/GroupsBaseTest.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Missing test case to verify checkbox presence even table has no data. Check in both cases.</Summary>
+    <Description></Description>
+    <Annotation>We had not included this test case as it was not present in test case mapping document. Will fix later.</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I6I4AJIL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-23 :: 22:37:29:229 GMT+05:30</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-24 :: 12:42:23:651 GMT+05:30</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Ram</AssignedTo>
+    <File line="89">src/main/java/com/pearson/uitest/testobjects/userspage/GroupsBaseTest.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Missing test case unchecking any one of all selected groups should make table header checkbox unselected.</Summary>
+    <Description></Description>
+    <Annotation>We had not included this test case as it was not present in test case mapping document. Will fix later.</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I6I4C3VE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-23 :: 22:38:42:266 GMT+05:30</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-25 :: 12:12:03:906 GMT+05:30</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Ram</AssignedTo>
+    <File line="89">src/main/java/com/pearson/uitest/testobjects/userspage/GroupsBaseTest.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Missing test case for selecting all groups in the table should be checked table header checkbox.</Summary>
+    <Description></Description>
+    <Annotation>We had not included this test case as it was not present in test case mapping document. Will fix later.</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I6I4EHGH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-23 :: 22:40:33:185 GMT+05:30</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-24 :: 12:38:07:307 GMT+05:30</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Ram</AssignedTo>
+    <File line="88">src/main/java/com/pearson/uitest/testobjects/userspage/GroupsBaseTest.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Missing test case to verify no sort option on description column.</Summary>
+    <Description></Description>
+    <Annotation>We had not included this test case as it was not present in test case mapping document. Will fix later.</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I6I4O0VV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-23 :: 22:47:58:267 GMT+05:30</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-24 :: 12:37:45:547 GMT+05:30</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Ram</AssignedTo>
+    <File line="86">src/main/java/com/pearson/uitest/testobjects/userspage/GroupsBaseTest.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Missing test case to verify if table has no data then no sort options on all columns.</Summary>
+    <Description></Description>
+    <Annotation>We had not included this test case as it was not present in test case mapping document. Will fix later.</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I6I4YB1E">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-23 :: 22:55:57:986 GMT+05:30</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-25 :: 15:05:32:378 GMT+05:30</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Ram</AssignedTo>
+    <File line="64">src/main/java/com/pearson/uitest/testobjects/userspage/SystemAdminGroupsLandingPageTest.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Test case missing the following scenario which is documented on mapping document (line 397)</Summary>
+    <Description>With the district organization selected from the Display list box, leaving the Grades and Filter list box at -- All Grades --  and -- All Groups --, click the 'Go' button. Verify the text "No Records Found" appears in the first row of the Name column (No groups exist at the district level and this search should always return "No Records Found").</Description>
+    <Annotation>Test cases need to be added. </Annotation>
+    <Revision>Test cases are added for these methods. Please refer the methods: checkNoRecordsFoundInGroupTable() and checkNoGroupsFoundWhenNoGroupsArePresentInGroupTable() in SystemDistrictAdminGroupsBaseTest class.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I6JTAY95">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-25 :: 03:05:24:905 GMT+05:30</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-25 :: 15:26:36:586 GMT+05:30</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Ram</AssignedTo>
+    <File line="185">src/main/java/com/pearson/uitest/pageobjects/GroupsLandingPage.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Work with developers to get the proper id for the column header</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I6JTR49L">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-25 :: 03:17:59:193 GMT+05:30</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-25 :: 15:24:45:941 GMT+05:30</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Ram</AssignedTo>
+    <File line="117">src/main/java/com/pearson/uitest/pageobjects/GroupsLandingPage.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Unused variable checkstyle</Summary>
+    <Description>Please remove the unused varialbes.  Remove the checkstyle errors whereever applicable.</Description>
+    <Annotation>Removed unused variables.</Annotation>
+    <Revision>Removed unused variables.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I6JTZIDL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-25 :: 03:24:30:729 GMT+05:30</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-25 :: 15:26:23:821 GMT+05:30</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Ram</AssignedTo>
+    <File line="130">src/main/java/com/pearson/uitest/pageobjects/GroupsLandingPage.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Where is the array List is used?</Summary>
+    <Description>userNameId.add( webElement.getText() );</Description>
+    <Annotation>Unused array list cann be removed.</Annotation>
+    <Revision>Removed unused array list.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I6JU3MZ3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-25 :: 03:27:43:311 GMT+05:30</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-25 :: 15:25:16:180 GMT+05:30</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Ram</AssignedTo>
+    <File line="134">src/main/java/com/pearson/uitest/pageobjects/GroupsLandingPage.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Why this much lines of code? Keep it simple.</Summary>
+    <Description>We have already written method to verify the list order:
+
+        List&lt;String&gt; actualOrgNames = ( (OrganizationPage) page ).getTableOrgIDsList();
+        List&lt;String&gt; expectedOrgNames = new ArrayList&lt;String&gt;( actualOrgNames );
+        CommonHelper.sortWithIgnoreCase( expectedOrgNames );
+        Assert.assertEquals( actualOrgNames, expectedOrgNames );
+
+Please get the list as per the table (actual) and sort it and keep in another list (expected)
+compare them by assert equals.</Description>
+    <Annotation>Method we have written does the sorting based on sort rules. Instead of using Ignore case, you can use both case sensitive and case insensitive sorting.</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.invalidWontfix</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I6JVDV8S">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-25 :: 04:03:40:204 GMT+05:30</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-02-25 :: 15:13:12:834 GMT+05:30</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ram</ReviewerId>
+    <AssignedTo>Ram</AssignedTo>
+    <File line="93">src/main/java/com/pearson/uitest/testobjects/grouppage/GroupsBaseTest.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Use Data Provider method</Summary>
+    <Description>The same piece of code written for all the sorting verification tests with few parameter changes.
+
+    public void checkNameColumnSortedInAscendingOrderByDefault() {
+        CommonHelper.nap();
+        ( (GroupsLandingPage) page ).sortGroupsTableColumn( GroupsConstants.COLUMN_NAME, GroupsConstants.SORT_ASCENDING );
+
+        assertEquals( ( (GroupsLandingPage) page ).getSortedValuesOfTableColumn( GroupsConstants.COLUMN1, GroupsConstants.SORT_ASCENDING ), 1, "Groups table is not sorted by Name column!!" );
+        log.info( GroupsConstants.VERIFICATION_SUCCESS );
+    }
+
+Please have a single test method and pass all the test data through data provider.</Description>
+    <Annotation>Data provider can be used to avoid repetitive code.</Annotation>
+    <Revision>Data provider </Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

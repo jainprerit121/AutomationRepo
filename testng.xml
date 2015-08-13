@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="false">
+    
+<!--   <test name="IE on Windows 8"  preserve-order="true">
+  <parameter name="browser" value="IE-Win8"></parameter>
+    <classes>
+      <class name="com.pearson.uitest.testsetup.AutomationSuiteSetup" />
+      <class name="com.pearson.uitest.testobjects.launcherpage.LauncherPageTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.StudentLoginTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.TeacherLoginTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.SystemAdminLoginTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.SchoolAdminLoginTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.DistrictAdminLoginTest" /> 
+      <class name="com.pearson.uitest.testobjects.homepage.SystemAdminHomePageTest"/> 
+      <class name="com.pearson.uitest.testobjects.homepage.SchoolAdminHomePageTest"/>
+      <class name="com.pearson.uitest.testobjects.homepage.DistrictAdminHomePageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SystemAdminOrganizationPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SchoolAdminOrganizationPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SystemAdminAddOrganizationPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SystemAdminEditOrganizationPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SchoolAdminEditOrganizationPageTest"/>  
+      <class name="com.pearson.uitest.testobjects.orgpage.SystemAdminEditDataSettingsPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SchoolAdminEditDataSettingsPageTest"/>      
+      <class name="com.pearson.uitest.testobjects.userspage.SystemAdminUsersLandingPageTest"/>  
+      <class name="com.pearson.uitest.testobjects.userspage.DistrictAdminUsersLandingPageTest"/>
+      <class name="com.pearson.uitest.testobjects.userspage.SchoolAdminUsersLandingPageTest"/>
+    </classes>
+  </test>
+
+  <test name="IE on Windows 7"  preserve-order="true">
+  <parameter name="browser" value="IE-Win7"></parameter>
+    <classes>
+      <class name="com.pearson.uitest.testsetup.AutomationSuiteSetup" />
+      <class name="com.pearson.uitest.testobjects.launcherpage.LauncherPageTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.StudentLoginTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.TeacherLoginTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.SystemAdminLoginTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.SchoolAdminLoginTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.DistrictAdminLoginTest" /> 
+      <class name="com.pearson.uitest.testobjects.homepage.SystemAdminHomePageTest"/> 
+      <class name="com.pearson.uitest.testobjects.homepage.SchoolAdminHomePageTest"/>
+      <class name="com.pearson.uitest.testobjects.homepage.DistrictAdminHomePageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SystemAdminOrganizationPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SchoolAdminOrganizationPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SystemAdminAddOrganizationPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SystemAdminEditOrganizationPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SchoolAdminEditOrganizationPageTest"/>  
+      <class name="com.pearson.uitest.testobjects.orgpage.SystemAdminEditDataSettingsPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SchoolAdminEditDataSettingsPageTest"/>      
+      <class name="com.pearson.uitest.testobjects.userspage.SystemAdminUsersLandingPageTest"/>  
+      <class name="com.pearson.uitest.testobjects.userspage.DistrictAdminUsersLandingPageTest"/>
+      <class name="com.pearson.uitest.testobjects.userspage.SchoolAdminUsersLandingPageTest"/>
+    </classes>
+  </test> 
+  
+  <test name="Safari on Mac"  preserve-order="true">
+  <parameter name="browser" value="Safari-Mac"></parameter>
+    <classes>
+      <class name="com.pearson.uitest.testsetup.AutomationSuiteSetup" />
+      <class name="com.pearson.uitest.testobjects.launcherpage.LauncherPageTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.StudentLoginTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.TeacherLoginTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.SystemAdminLoginTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.SchoolAdminLoginTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.DistrictAdminLoginTest" /> 
+      <class name="com.pearson.uitest.testobjects.homepage.SystemAdminHomePageTest"/> 
+      <class name="com.pearson.uitest.testobjects.homepage.SchoolAdminHomePageTest"/>
+      <class name="com.pearson.uitest.testobjects.homepage.DistrictAdminHomePageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SystemAdminOrganizationPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SchoolAdminOrganizationPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SystemAdminAddOrganizationPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SystemAdminEditOrganizationPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SchoolAdminEditOrganizationPageTest"/>  
+      <class name="com.pearson.uitest.testobjects.orgpage.SystemAdminEditDataSettingsPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SchoolAdminEditDataSettingsPageTest"/>      
+      <class name="com.pearson.uitest.testobjects.userspage.SystemAdminUsersLandingPageTest"/>  
+      <class name="com.pearson.uitest.testobjects.userspage.DistrictAdminUsersLandingPageTest"/>
+      <class name="com.pearson.uitest.testobjects.userspage.SchoolAdminUsersLandingPageTest"/>
+    </classes>
+  </test>
+  
+  <test name="Chrome on Mac"  preserve-order="true">
+  <parameter name="browser" value="Chrome-Mac"></parameter>
+    <classes>
+      <class name="com.pearson.uitest.testsetup.AutomationSuiteSetup" />
+      <class name="com.pearson.uitest.testobjects.launcherpage.LauncherPageTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.StudentLoginTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.TeacherLoginTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.SystemAdminLoginTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.SchoolAdminLoginTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.DistrictAdminLoginTest" /> 
+      <class name="com.pearson.uitest.testobjects.homepage.SystemAdminHomePageTest"/> 
+      <class name="com.pearson.uitest.testobjects.homepage.SchoolAdminHomePageTest"/>
+      <class name="com.pearson.uitest.testobjects.homepage.DistrictAdminHomePageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SystemAdminOrganizationPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SchoolAdminOrganizationPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SystemAdminAddOrganizationPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SystemAdminEditOrganizationPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SchoolAdminEditOrganizationPageTest"/>  
+      <class name="com.pearson.uitest.testobjects.orgpage.SystemAdminEditDataSettingsPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SchoolAdminEditDataSettingsPageTest"/>      
+      <class name="com.pearson.uitest.testobjects.userspage.SystemAdminUsersLandingPageTest"/>  
+      <class name="com.pearson.uitest.testobjects.userspage.DistrictAdminUsersLandingPageTest"/>
+      <class name="com.pearson.uitest.testobjects.userspage.SchoolAdminUsersLandingPageTest"/>
+    </classes>
+  </test>
+  
+  <test name="Chrome on Windows7"  preserve-order="true">
+  <parameter name="browser" value="Chrome-Win7"></parameter>
+    <classes>
+      <class name="com.pearson.uitest.testsetup.AutomationSuiteSetup" />
+      <class name="com.pearson.uitest.testobjects.launcherpage.LauncherPageTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.StudentLoginTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.TeacherLoginTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.SystemAdminLoginTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.SchoolAdminLoginTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.DistrictAdminLoginTest" /> 
+      <class name="com.pearson.uitest.testobjects.homepage.SystemAdminHomePageTest"/> 
+      <class name="com.pearson.uitest.testobjects.homepage.SchoolAdminHomePageTest"/>
+      <class name="com.pearson.uitest.testobjects.homepage.DistrictAdminHomePageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SystemAdminOrganizationPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SchoolAdminOrganizationPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SystemAdminAddOrganizationPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SystemAdminEditOrganizationPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SchoolAdminEditOrganizationPageTest"/>  
+      <class name="com.pearson.uitest.testobjects.orgpage.SystemAdminEditDataSettingsPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SchoolAdminEditDataSettingsPageTest"/>      
+      <class name="com.pearson.uitest.testobjects.userspage.SystemAdminUsersLandingPageTest"/>  
+      <class name="com.pearson.uitest.testobjects.userspage.DistrictAdminUsersLandingPageTest"/>
+      <class name="com.pearson.uitest.testobjects.userspage.SchoolAdminUsersLandingPageTest"/>
+    </classes>
+  </test>
+  
+  <test name="Chrome on Windows8"  preserve-order="true">
+  <parameter name="browser" value="Chrome-Win8"></parameter>
+    <classes>
+      <class name="com.pearson.uitest.testsetup.AutomationSuiteSetup" />
+      <class name="com.pearson.uitest.testobjects.launcherpage.LauncherPageTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.StudentLoginTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.TeacherLoginTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.SystemAdminLoginTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.SchoolAdminLoginTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.DistrictAdminLoginTest" /> 
+      <class name="com.pearson.uitest.testobjects.homepage.SystemAdminHomePageTest"/> 
+      <class name="com.pearson.uitest.testobjects.homepage.SchoolAdminHomePageTest"/>
+      <class name="com.pearson.uitest.testobjects.homepage.DistrictAdminHomePageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SystemAdminOrganizationPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SchoolAdminOrganizationPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SystemAdminAddOrganizationPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SystemAdminEditOrganizationPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SchoolAdminEditOrganizationPageTest"/>  
+      <class name="com.pearson.uitest.testobjects.orgpage.SystemAdminEditDataSettingsPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SchoolAdminEditDataSettingsPageTest"/>      
+      <class name="com.pearson.uitest.testobjects.userspage.SystemAdminUsersLandingPageTest"/>  
+      <class name="com.pearson.uitest.testobjects.userspage.DistrictAdminUsersLandingPageTest"/>
+      <class name="com.pearson.uitest.testobjects.userspage.SchoolAdminUsersLandingPageTest"/>
+    </classes>
+  </test>
+  
+  <test name="Firefox on Windows8"  preserve-order="true">
+  <parameter name="browser" value="Firefox-Win8"></parameter>
+    <classes>
+      <class name="com.pearson.uitest.testsetup.AutomationSuiteSetup" />
+      <class name="com.pearson.uitest.testobjects.launcherpage.LauncherPageTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.StudentLoginTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.TeacherLoginTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.SystemAdminLoginTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.SchoolAdminLoginTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.DistrictAdminLoginTest" /> 
+      <class name="com.pearson.uitest.testobjects.homepage.SystemAdminHomePageTest"/> 
+      <class name="com.pearson.uitest.testobjects.homepage.SchoolAdminHomePageTest"/>
+      <class name="com.pearson.uitest.testobjects.homepage.DistrictAdminHomePageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SystemAdminOrganizationPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SchoolAdminOrganizationPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SystemAdminAddOrganizationPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SystemAdminEditOrganizationPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SchoolAdminEditOrganizationPageTest"/>  
+      <class name="com.pearson.uitest.testobjects.orgpage.SystemAdminEditDataSettingsPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SchoolAdminEditDataSettingsPageTest"/>      
+      <class name="com.pearson.uitest.testobjects.userspage.SystemAdminUsersLandingPageTest"/>  
+      <class name="com.pearson.uitest.testobjects.userspage.DistrictAdminUsersLandingPageTest"/>
+      <class name="com.pearson.uitest.testobjects.userspage.SchoolAdminUsersLandingPageTest"/>
+    </classes>
+  </test> 
+  
+  <test name="Firefox on Windows 7"  preserve-order="true">
+  <parameter name="browser" value="Firefox-Win7"></parameter>
+    <classes>
+      <class name="com.pearson.uitest.testsetup.AutomationSuiteSetup" />
+      <class name="com.pearson.uitest.testobjects.launcherpage.LauncherPageTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.StudentLoginTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.TeacherLoginTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.SystemAdminLoginTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.SchoolAdminLoginTest" />
+      <class name="com.pearson.uitest.testobjects.loginpage.DistrictAdminLoginTest" /> 
+      <class name="com.pearson.uitest.testobjects.homepage.SystemAdminHomePageTest"/> 
+      <class name="com.pearson.uitest.testobjects.homepage.SchoolAdminHomePageTest"/>
+      <class name="com.pearson.uitest.testobjects.homepage.DistrictAdminHomePageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SystemAdminOrganizationPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SchoolAdminOrganizationPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SystemAdminAddOrganizationPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SystemAdminEditOrganizationPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SchoolAdminEditOrganizationPageTest"/>  
+      <class name="com.pearson.uitest.testobjects.orgpage.SystemAdminEditDataSettingsPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SchoolAdminEditDataSettingsPageTest"/>      
+      <class name="com.pearson.uitest.testobjects.userspage.SystemAdminUsersLandingPageTest"/>  
+      <class name="com.pearson.uitest.testobjects.userspage.DistrictAdminUsersLandingPageTest"/>
+      <class name="com.pearson.uitest.testobjects.userspage.SchoolAdminUsersLandingPageTest"/>
+    </classes>
+ </test> -->
+  
+  <test name="Firefox on Windows 7"  preserve-order="true">
+  <parameter name="browser" value="Firefox-Win7"></parameter>
+    <classes>
+      <class name="com.pearson.uitest.testsetup.AutomationSuiteSetup" />      
+      <class name="com.pearson.uitest.testobjects.licensepage.SystemAdminAddLicensePageTest" />
+      <class name="com.pearson.uitest.testobjects.licensepage.SystemAdminTransferLicensePageTest" />
+      <class name="com.pearson.uitest.testobjects.licensepage.SystemAdminOrgLicensePageTest" />
+      <class name="com.pearson.uitest.testobjects.licensepage.SystemAdminLicenseLandingPageTest" />      
+    </classes> 
+  </test>
+  
+    <!-- <test name="Firefox on Windows 7"  preserve-order="true">
+  <parameter name="browser" value="Firefox-Win7"></parameter>
+    <classes>
+      <class name="com.pearson.uitest.testsetup.AutomationSuiteSetup" />      
+      <class name="com.pearson.uitest.testobjects.orgpage.SystemAdminOrganizationPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SchoolAdminOrganizationPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SystemAdminAddOrganizationPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SystemAdminEditOrganizationPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SchoolAdminEditOrganizationPageTest"/>  
+      <class name="com.pearson.uitest.testobjects.orgpage.SystemAdminEditDataSettingsPageTest"/>
+      <class name="com.pearson.uitest.testobjects.orgpage.SchoolAdminEditDataSettingsPageTest"/>  
+    </classes> 
+  </test> -->
+    
+</suite>
